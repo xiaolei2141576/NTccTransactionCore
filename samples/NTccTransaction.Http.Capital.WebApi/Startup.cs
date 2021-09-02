@@ -43,7 +43,7 @@ namespace NTccTransaction.Http.Capital.WebApi
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "NTccTransaction.Http.Capital.WebApi", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "NTccTransaction.Http.Capital.WebApi", Version = "v1" }); 
             });
 
             services.AddTransient<ICapitalService, CapitalService>();
