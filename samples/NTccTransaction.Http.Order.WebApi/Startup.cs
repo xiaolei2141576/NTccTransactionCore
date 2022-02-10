@@ -24,7 +24,7 @@ namespace NTccTransaction.Http.Order.WebApi
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
+        public IConfiguration Configuration { get; }   
 
         public ILifetimeScope AutofacContainer { get; private set; }
 
@@ -48,7 +48,7 @@ namespace NTccTransaction.Http.Order.WebApi
             services.AddTransient<IOrderService1, OrderService1>();
             services.AddTransient<OrderService1>();
 
-            services.AddTransient<ICapitalProxy, CapitalProxy>();
+            services.AddTransient<ICapitalProxy, CapitalProxy>(); 
             services.AddTransient<CapitalProxy>();
             services.AddTransient<IUserProxy, UserProxy>();
             services.AddTransient<UserProxy>();
